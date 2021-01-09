@@ -1,0 +1,36 @@
+{
+  "name": "redux-persistent-store-enhancer",
+  "version": "1.0.0",
+  "description": "An enhancer for a redux store that will allow state slices to be persisted / exported",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypnopotamus/ReduxPersistentStoreEnhancer.git"
+  },
+  "author": "Chris Dykstra",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/hypnopotamus/ReduxPersistentStoreEnhancer/issues"
+  },
+  "homepage": "https://github.com/hypnopotamus/ReduxPersistentStoreEnhancer#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-typescript": "^7.12.7",
+    "@types/jest": "^26.0.20",
+    "@types/uuid": "^8.3.0",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "jest-localstorage-mock": "^2.4.6",
+    "sessionstorage": "^0.1.0",
+    "typescript": "^4.1.3",
+    "uuid": "^8.3.2"
+  },
+  "dependencies": {
+    "redux": "^4.0.5",
+    "ts-node": "^9.1.1"
+  }
+}
