@@ -18,9 +18,7 @@ let currentState: TestState | undefined = undefined;
 let currentStateSlice: DeepPartial<TestState> | undefined = undefined;
 const fakeExportStrategy: ExportStrategy<TestState> = ({
     getStateSlice: () => currentStateSlice,
-    exportStateSlice: (stateSlice) => {
-        currentStateSlice = stateSlice
-    }
+    exportStateSlice: (stateSlice) => currentStateSlice = stateSlice
 });
 
 const fakeReducer: Reducer<TestState, TestAction> = (state, action) => {
