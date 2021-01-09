@@ -22,5 +22,7 @@ const exportStrategy: ExportStrategy<State> = ({
 
 const selector = (state: State) => ({ slice: state?.slice });
 
-const store = createStore(reducer, initialState, exportingEnhancer(selector, exportStrategy));
+const exportingStore = createStore(reducer, initialState, exportingEnhancer(selector, exportStrategy));
+const sessionStore = createStore(reducer, initialState, sessionStorageEnhancer(selector));
+const localStore = createStore(reducer, initialState, localStorageEnhancer(selector));
 ```
